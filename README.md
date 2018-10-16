@@ -28,6 +28,7 @@ Host someinternalhost
 # VPN
 
 bastion_IP = 35.187.6.52
+
 someinternalhost_IP = 10.132.0.3
 
 # Настройка VPN (CentOS 7)
