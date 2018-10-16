@@ -5,12 +5,13 @@ xtalf Infra repository
 
 Способы подключения по ssh:
 1. Подключение с помощью однострочника.
-
+```
 ssh -o ProxyCommand='ssh -W %h:%p appuser@35.187.6.52' appuser@10.132.0.3
+```
 
 2. Подключение через  алиас.
-
 Создаем на рабочем устройстве ~/.ssh/config со следующим содержанием:
+
 ```
 Host bastion
 	User appuser
