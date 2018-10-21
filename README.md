@@ -73,3 +73,15 @@ sudo systemctl enable mongod pritunl
 testapp_IP = 35.240.14.18
 
 testapp_port = 9292
+
+Example with startup script:
+```
+gcloud compute instances create reddit-app-test1\
+  --boot-disk-size=10GB \
+  --image-family ubuntu-1604-lts \
+  --image-project=ubuntu-os-cloud \
+  --machine-type=g1-small \
+  --tags puma-server \
+  --restart-on-failure \
+  --metadata startup-script='wget -O - https://gist.githubusercontent.com/xtalf/b5822ff44dfc6be06a4af8e3c19d8992/raw/4d29135c90db8e819e8a4c1f4c96443427b63c84/run_app.sh | bash'
+```
