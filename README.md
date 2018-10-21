@@ -71,7 +71,6 @@ sudo systemctl enable mongod pritunl
 # Homework 4
 
 testapp_IP = 35.240.14.18
-
 testapp_port = 9292
 
 Example with startup script:
