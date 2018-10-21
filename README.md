@@ -85,3 +85,8 @@ gcloud compute instances create reddit-app-test1\
   --restart-on-failure \
   --metadata startup-script='wget -O - https://gist.githubusercontent.com/xtalf/b5822ff44dfc6be06a4af8e3c19d8992/raw/4d29135c90db8e819e8a4c1f4c96443427b63c84/run_app.sh | bash'
 ```
+
+Example command for create firewall rule:
+```
+gcloud compute --project=delta-pagoda-219212 firewall-rules create default-puma-server --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=tcp:9292 --source-ranges=0.0.0.0/0 --target-tags=puma-server
+```
