@@ -31,6 +31,12 @@ bastion_IP = 35.210.90.96
 
 someinternalhost_IP = 10.132.0.3
 
+# Homework 4
+
+testapp_IP = 35.240.14.18
+
+testapp_port = 9292
+
 # Настройка VPN (CentOS 7)
 
 Подключаем нужные репозитории:
@@ -67,12 +73,6 @@ sudo yum -y install pritunl mongodb-org
 sudo systemctl start mongod pritunl
 sudo systemctl enable mongod pritunl
 ```
-
-# Homework 4
-
-testapp_IP = 35.240.14.18
-
-testapp_port = 9292
 
 Example with startup script:
 ```
