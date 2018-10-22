@@ -31,7 +31,7 @@ bastion_IP = 35.210.90.96
 
 someinternalhost_IP = 10.132.0.3
 
-# Homework 4
+# HW 4
 
 testapp_IP = 35.240.14.18
 
