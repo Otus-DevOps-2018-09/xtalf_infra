@@ -33,7 +33,7 @@ someinternalhost_IP = 10.132.0.3
 
 # HW 4
 
-testapp_IP = 35.240.14.18
+testapp_IP = 104.155.103.90
 
 testapp_port = 9292
 
