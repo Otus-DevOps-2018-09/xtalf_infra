@@ -1,0 +1,7 @@
+{
+    "project_id": "delta-origami-119212",
+    "source_image_family": "ubuntu-1604-lts",
+    "machine_type": "f1-micro",
+    "zone": "asia-south1-c",
+    "image_description": "Anything image"
+}
