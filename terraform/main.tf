@@ -9,6 +9,8 @@ resource "google_compute_instance" "app" {
   machine_type = "f1-micro"
   zone         = "europe-west1-b"
 
+  depends_on = ["google_compute_project_metadata.ssh_keys"]
+
   tags = ["reddit-app"]
 
   boot_disk {
@@ -22,9 +24,9 @@ resource "google_compute_instance" "app" {
     access_config = {}
   }
 
-  metadata {
-    ssh-keys = "appuser:${file("${var.public_key_path}")}"
-  }
+  #metadata {
+  #  ssh-keys = "appuser:${file("${var.public_key_path}")}appuser1:${file("${var.public_key_path}")}appuser2:${file("${var.public_key_path}")}" 
+  #}
 
   connection {
     type        = "ssh"
@@ -40,6 +42,12 @@ resource "google_compute_instance" "app" {
 
   provisioner "remote-exec" {
     script = "files/deploy.sh"
+  }
+}
+
+resource "google_compute_project_metadata" "ssh_keys" {
+  metadata {
+    ssh-keys = "appuser:${file("${var.public_key_path}")}appuser1:${file("${var.public_key_path}")}appuser2:${file("${var.public_key_path}")}"
   }
 }
 
