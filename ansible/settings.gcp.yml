@@ -1,0 +1,6 @@
+plugin: gcp_compute
+projects:
+  - delta-pagoda-219212
+filters:
+auth_kind: serviceaccount
+service_account_file: /vagrant/Infra-d0c8445230d0.json
