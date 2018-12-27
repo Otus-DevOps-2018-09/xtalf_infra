@@ -4,3 +4,10 @@ projects:
 filters:
 auth_kind: serviceaccount
 service_account_file: /vagrant/Infra-d0c8445230d0.json
+keyed_groups:
+  - prefix: tag
+    key: tags['items']
+hostnames:
+  - name
+compose:
+  ansible_host: networkInterfaces[0].accessConfigs[0].natIP

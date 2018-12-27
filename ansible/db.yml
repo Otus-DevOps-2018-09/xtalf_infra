@@ -1,5 +1,6 @@
 - name: Configure MongoDB
-  hosts: db
+#  hosts: db
+  hosts: tag_reddit_db
   become: true
 
   vars:
