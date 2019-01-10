@@ -11,7 +11,7 @@
     dest: /home/appuser/db_config
 - name: Enable puma
   systemd: name=puma enabled=yes
- 
+
 - name: Show info about the env this host belongs to
   debug:
     msg: "This host is in {{ env }} environment!!!"
