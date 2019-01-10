@@ -9,3 +9,4 @@ packer/variables.json
 *.retry
 ansible/Infra-d0c8445230d0.json
 jdauphant.nginx
+ansible/vault.key
