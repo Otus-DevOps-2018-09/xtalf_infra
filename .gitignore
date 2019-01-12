@@ -7,3 +7,6 @@ packer/variables.json
 .terraform/
 *.tfstate.lock.info
 *.retry
+ansible/Infra-d0c8445230d0.json
+jdauphant.nginx
+ansible/vault.key

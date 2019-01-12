@@ -1,0 +1,13 @@
+plugin: gcp_compute
+projects:
+  - delta-pagoda-219212
+filters:
+auth_kind: serviceaccount
+service_account_file: ~/otus/xtalf_infra/ansible/Infra-d0c8445230d0.json
+keyed_groups:
+  - prefix: tag
+    key: tags['items']
+hostnames:
+  - name
+compose:
+  ansible_host: networkInterfaces[0].accessConfigs[0].natIP

@@ -1,0 +1,12 @@
+- name: Configure App
+#  hosts: app
+  hosts: tag_reddit_app
+  become: true
+
+#  vars:
+#    db_host: "{{ hostvars['reddit-db']['networkInterfaces'][0]['networkIP'] }}"
+#    db_host: 10.132.0.2
+
+  roles:
+    - app
+    - jdauphant.nginx
