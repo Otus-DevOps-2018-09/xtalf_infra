@@ -10,3 +10,10 @@ packer/variables.json
 ansible/Infra-d0c8445230d0.json
 jdauphant.nginx
 ansible/vault.key
+# Vagrant & molecule
+.vagrant/
+*.log
+*.pyc
+.molecule
+.cache
+.pytest_cache
